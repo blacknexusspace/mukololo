@@ -1,0 +1,52 @@
+.unordered-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    cursor: pointer;
+ 
+}
+
+.unordered-list li {
+    font-weight:500;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+}
+
+.contact-but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.book-btn{
+    background-color: #193189;
+    color: white;
+    border:none;
+    width: 10rem;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}

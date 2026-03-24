@@ -1,0 +1,7 @@
+.hero-background{
+    background-image: url("../images/Mukololo-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+}

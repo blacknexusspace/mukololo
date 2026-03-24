@@ -1,0 +1,32 @@
+.whoarewe-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.whoarewe-heading{
+    font-size: 25px;
+}
+
+.whoarewe-subheading {
+    font-size: 30px;
+}
+
+
+.whoarewe-image{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    max-height: 400px;
+}
+
+.abt-btn {
+    background-color:  #193189;;
+    border: none;
+    height: 45px;
+    color:white;
+    width: 160px;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 800;
+}

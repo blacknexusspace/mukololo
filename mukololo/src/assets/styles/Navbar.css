@@ -9,8 +9,13 @@
  
 }
 
+.logo{
+    color: white;
+}
+
 .unordered-list li {
     font-weight:500;
+    color: white;
 }
 
 .nav-container {

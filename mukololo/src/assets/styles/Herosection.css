@@ -1,0 +1,100 @@
+.hero-container {
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+
+   
+}
+
+.hero-heading {
+    color: white;
+    text-align: center;
+   
+}
+
+.hero-subheading {
+    color: white;
+    text-align: center;
+
+}
+
+.btn-book {
+    background-color: #193189;
+    color: white;
+    border:none;
+    width: 13rem;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.btn-book:hover{
+
+    background-color: transparent;
+    color: white;
+    border:1px solid white;
+    width: 13rem;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    font-weight: 900;
+    
+}
+
+.hero-btn{
+    gap:20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.explore-btn{
+
+    background-color: transparent;
+    color: white;
+    border:1px solid white;
+    width: 13rem;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    font-weight: 900;
+
+}
+
+
+.explore-btn:hover{
+
+    background-color: #193189;
+    color: white;
+    border:none;
+    width: 13rem;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    font-weight: 900;
+    
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px
+}
+
+
+.star-txt{
+    color: white;
+    font-weight: 700;
+}

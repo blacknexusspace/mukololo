@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div className='nav-container'>
       <div>
-        <h1>Mukololo Travel & Tour</h1>
+        <h1 className='logo'>Mukololo Travel & Tour</h1>
       </div>
         <div>
             <ul className='unordered-list text-4xl'>
@@ -21,10 +21,7 @@ function Navbar() {
         </div>
       
       <div className='contact-but'>
-          <div className='contact'>
-            <div><IoCallOutline size={20} /></div>
-            <div><p>+27 76 456 8280</p></div>
-          </div>
+         
           <div><button className='book-btn'>Book Now</button></div>
       </div>
     </div>

@@ -5,6 +5,9 @@ import Herosection from '../Components/Herosection'
 import "../assets/styles/Home.css"
 import Whoarewe from '../Components/whoarewe'
 import Services from '../Components/Services'
+import Gallery from '../Components/Gallery'
+import Special from '../Components/Special'
+import Footer from '../Components/Footer'
 
 function Home() {
   return (
@@ -17,6 +20,9 @@ function Home() {
     </div>
       <Whoarewe/>
       <Services/>
+      <Gallery/>
+      <Special/>
+      <Footer />
 
       </div>
   )

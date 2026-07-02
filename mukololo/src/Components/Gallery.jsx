@@ -1,32 +1,25 @@
 import React from "react";
 import "../assets/styles/Gallery.css";
+import mpumalanga from "../assets/images/mpumalangatrip.jpg"
+import pe from "../assets/images/happy-valley-beach.jpg"
 
 function Gallery() {
   const destinations = [
     {
       id: 1,
       name: "Port Elizabeth Gqeberha, Eastern Cape ",
-      image:
-        "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f",
+      image:pe,
       description: "Discover the beauty of Port Elizabeth",
       galleryLink: "/gallery/paris",
     },
     {
       id: 2,
-      name: "Cape Town, South Africa",
-      image:
-        "https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e",
+      name: "Mpumalanga, South Africa",
+      image: mpumalanga,
       description: "Experience breathtaking mountains and beaches.",
       galleryLink: "/gallery/capetown",
     },
-    {
-      id: 3,
-      name: "Dubai, UAE",
-      image:
-        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-      description: "Explore luxury, innovation, and desert adventures.",
-      galleryLink: "/gallery/dubai",
-    },
+  
   ];
 
   return (

@@ -12,19 +12,31 @@ import Footer from '../Components/Footer'
 function Home() {
   return (
     <div>
-    <div className='hero-background'>
-       
-        <Navbar/>
-        <Herosection/>
-        
+    <div className="hero-background" id="home">
+      <Navbar />
+      <Herosection />
     </div>
-      <Whoarewe/>
-      <Services/>
-      <Gallery/>
-      <Special/>
+  
+    <section id="about">
+      <Whoarewe />
+    </section>
+  
+    <section id="services">
+      <Services />
+    </section>
+  
+    <section id="gallery">
+      <Gallery />
+    </section>
+  
+    <section id="specials">
+      <Special />
+    </section>
+  
+    <section id="contact">
       <Footer />
-
-      </div>
+    </section>
+  </div>
   )
 }
 

@@ -1,43 +1,82 @@
-import React from 'react'
-import "../assets/styles/Herosection.css"
+import React, { useEffect, useState } from "react";
+import "../assets/styles/Herosection.css";
 import { IoStarSharp } from "react-icons/io5";
 import { IoIosStarOutline } from "react-icons/io";
-import Container from '../Pages/container'
+import Container from "../Pages/container";
+
+const slides = [
+  "/images/hero1.jpg",
+  "/images/hero2.jpg",
+  "/images/hero3.jpg",
+];
 
 function Herosection() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <div className='hero-container'>
+    <section className="hero-slider">
+
+      {slides.map((image, index) => (
+        <div
+          key={index}
+          className={`hero-image ${current === index ? "active" : ""}`}
+          style={{ backgroundImage: `url(${image})` }}
+        />
+      ))}
+
+      <div className="hero-overlay"></div>
 
       <Container>
+        <div className="hero-content">
 
-      <div className='hero-txt'>
+          <div className="stars">
+            <IoStarSharp />
+            <IoStarSharp />
+            <IoStarSharp />
+            <IoStarSharp />
+            <IoIosStarOutline />
+            <span>4.9 Rated by 100+ Happy Travellers</span>
+          </div>
 
-        <div className='stars'>
-        <IoStarSharp color='white' size={24} />
-        <IoStarSharp color='white' size={24} />
-        <IoStarSharp color='white' size={24} />
-        <IoStarSharp color='white' size={24} />
-        <IoIosStarOutline color='white' size={24} />
-        <span className='star-txt'>4.9 rate by 100+ reviews</span>
-        
+          <h1>
+            Explore Africa.
+            <br />
+            Travel Without Stress.
+          </h1>
+
+          <p>
+            Book flights, hotels, visa assistance, holiday packages and
+            unforgettable journeys across Southern Africa.
+          </p>
+
+          <div className="hero-buttons">
+            <button className="btn-book">Book Your Trip</button>
+            <button className="btn-outline">Explore Destinations</button>
+          </div>
+
         </div>
 
-        <div>
-            <h1 className='hero-heading'>Explore Africa. Travel Without Stress.<br/> Create Memories.</h1>
-            <p className='hero-subheading'>We help you book flights, hotels, and unforgettable road trips across Southern Africa.<br/> From relaxing beach holidays to exciting adventure tours, we make your travel simple and memorable. </p>
+        <div className="dots">
+          {slides.map((_, index) => (
+            <span
+              key={index}
+              className={current === index ? "dot active" : "dot"}
+              onClick={() => setCurrent(index)}
+            />
+          ))}
         </div>
-        <div className='hero-btn'>
-            <button className='btn-book'>Book Your Trip With Us</button>
-            <button className='explore-btn'>Explore Destinations</button>
+      </Container>
 
-        </div>
-
-        </div>
-        </Container>
-
-
-    </div>
-  )
+    </section>
+  );
 }
 
-export default Herosection
+export default Herosection;

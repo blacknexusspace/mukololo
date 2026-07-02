@@ -1,52 +1,66 @@
 import React from "react";
 import "../assets/styles/Special.css";
-import flyer from "../assets/images/boardwalk.jpg";
+
+import trip1 from "../assets/images/mpumalanga.jpeg";
+import trip2 from "../assets/images/port elizabeth.jpeg";
+
 
 function Special() {
+  const trips = [
+    {
+      id: 1,
+      image: trip1,
+      title: "Explore Mpumalanga",
+      date: "18 - 20 December 2026",
+      price: "R3550",
+      description:
+        "Experience Mpumalanga with beautiful nature , transport and guided tours.",
+    },
+    {
+      id: 2,
+      image: trip2,
+      title: "Let's Explore Port Elizabeth Gqeberha",
+      date: "05 - 07 March 2027",
+      price: "R6 500",
+      description:
+        "Relax on Port Elizabeth beautiful beaches with exciting activities and premium accommodation.",
+    },
+
+  ];
+
   return (
     <section className="special">
       <div className="special-heading">
-        <span>Special Offers</span>
-        <h2>Travel Deals You Don't Want to Miss</h2>
-        <p>
-          Discover our latest travel promotions and limited-time packages.
-        </p>
+        <span>UPCOMING TRIPS</span>
+        <h2>Choose Your Next Adventure</h2>
       </div>
 
-      <div className="special-card">
-        <div className="special-image">
-          <img src={flyer} alt="Cape Town Tour" />
-        </div>
-
-        <div className="special-details">
-          <div className="offer-badge">
-            Limited Offer
+      {trips.map((trip, index) => (
+        <div
+          key={trip.id}
+          className={`trip ${index % 2 !== 0 ? "reverse" : ""}`}
+        >
+          <div className="trip-image">
+            <img src={trip.image} alt={trip.title} />
           </div>
 
-          <h3>Cape Town Spring Escape</h3>
+          <div className="trip-content">
+            <span className="badge">Limited Seats</span>
 
-          <p>
-            Enjoy a carefully planned getaway with accommodation,
-            transportation, sightseeing, and unforgettable experiences.
-          </p>
+            <h2>{trip.title}</h2>
 
-          <ul>
-            <li>3 Nights Accommodation</li>
-            <li>Return Transport</li>
-            <li>Breakfast Included</li>
-            <li>Guided City Tour</li>
-          </ul>
+            <p className="date">
+              <strong>Date:</strong> {trip.date}
+            </p>
 
-          <div className="price">
-            From <span>R4,500</span>
-          </div>
+            <p>{trip.description}</p>
 
-          <div className="buttons">
-           
-            <button className="primary">Book Now</button>
+            <h3>{trip.price}</h3>
+
+            <button>Book Now</button>
           </div>
         </div>
-      </div>
+      ))}
     </section>
   );
 }

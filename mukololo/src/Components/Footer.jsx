@@ -23,22 +23,43 @@ function Footer() {
           </p>
 
           <div className="footer-socials">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaWhatsapp /></a>
-          </div>
-        </div>
+  <a
+    href="https://www.facebook.com/profile.php?id=61588482265846"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaFacebookF />
+  </a>
 
-        <div className="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/destinations">Destinations</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
+  <a
+    href="https://instagram.com/YourUsername"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaInstagram />
+  </a>
+
+  <a
+    href="https://wa.me/27814372924"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaWhatsapp />
+  </a>
+</div>
         </div>
+        <div className="footer-links">
+  <h3>Quick Links</h3>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#specials">Special Offers</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
 
         <div className="footer-services">
           <h3>Services</h3>
@@ -55,15 +76,15 @@ function Footer() {
           <h3>Contact Us</h3>
 
           <p>
-            <FaMapMarkerAlt /> Cape Town, South Africa
+            <FaMapMarkerAlt /> South Africa
           </p>
 
           <p>
-            <FaPhone /> +27 XX XXX XXXX
+            <FaPhone /> +27 81 437 2924
           </p>
 
           <p>
-            <FaEnvelope /> info@yourtravelbrand.co.za
+            <FaEnvelope /> mukololotravelntour.mtt@gmail.com
           </p>
         </div>
 
@@ -71,7 +92,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          © {new Date().getFullYear()} Your Travel Brand. All Rights Reserved.
+          © {new Date().getFullYear()} Mukololo Travel & Tour. All Rights Reserved.
         </p>
 
         <p>
